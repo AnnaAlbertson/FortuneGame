@@ -1,0 +1,7 @@
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\obj\Debug\Game_Repository.csprojAssemblyReference.cache
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\obj\Debug\Game_Repository.csproj.CoreCompileInputs.cache
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\bin\Debug\Game_Repository.exe.config
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\bin\Debug\Game_Repository.exe
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\bin\Debug\Game_Repository.pdb
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\obj\Debug\Game_Repository.exe
+C:\Users\13179\source\repos\FortuneGame\Game_Repository\obj\Debug\Game_Repository.pdb
