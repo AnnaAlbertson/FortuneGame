@@ -15,7 +15,18 @@ namespace Game
             Console.Title= "Fortune Game";
             Console.BackgroundColor = ConsoleColor.DarkYellow;
             Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.Clear();
+            User();
             Menu();
+        }
+        public void User()
+        {
+            Console.WriteLine("What's your name?");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Hi " + userName + "!\n" +
+                "Welcome to the Fortune Game!\n" +
+                "Press any key to continue...");
+            Console.ReadLine();
         }
         private void Menu()
         {
@@ -24,17 +35,16 @@ namespace Game
             while (keepRunning)
             {
                 Console.Clear();
-                Console.WriteLine("Welcome to the Fortune Game.\n" +
-                    "Let's start by picking a color.\n" +
+                Console.WriteLine ("Pick a color any color, any color at all (As long as it is on the list below).\n" +
                     "1) Magenta\n" +
                     "2) Green\n" +
                     "3) Purple\n" +
                     "4) Cyan\n" +
-                    "5) Exit");
-
+                    "5) Exit\n" +
+                    "Please type a number corresponding to a color above. Then, press enter to continue...");
 
                 string inputColor = Console.ReadLine();
-
+                Console.Clear();
                 switch (inputColor)
                 {
                     //Magenta
@@ -43,7 +53,8 @@ namespace Game
                             "1\n" +
                             "2\n" +
                             "5\n" +
-                            "6");
+                            "6\n" +
+                        "Please type a number from the list above. Then, press enter to continue...");
                         int inputNum1 = Convert.ToInt32(Console.ReadLine());
                         if (inputNum1 == 1)
                         {
@@ -64,6 +75,7 @@ namespace Game
                         else
                         {
                             Console.WriteLine("Please enter 1, 2, 5, or 6");
+                            goto case "1";
                         }
                     break;
                     //Green
@@ -72,7 +84,8 @@ namespace Game
                             "3\n" +
                             "4\n" +
                             "7\n" +
-                            "8");
+                            "8\n" +
+                        "Please type a number from the list above. Then, press enter to continue...");
                         int inputNum2 = Convert.ToInt32(Console.ReadLine());
                         if (inputNum2 == 3)
                         {
@@ -93,6 +106,7 @@ namespace Game
                         else
                         {
                             Console.WriteLine("Please enter 3, 4, 7, or 8");
+                            goto case "2";
                         }
                         break;
                     //Purple
@@ -101,7 +115,8 @@ namespace Game
                             "1\n" +
                             "2\n" +
                             "5\n" +
-                            "6");
+                            "6\n" +
+                        "Please type a number from the list above. Then, press enter to continue...");
                         int inputNum3 = Convert.ToInt32(Console.ReadLine());
                         if (inputNum3 == 1)
                         {
@@ -123,6 +138,7 @@ namespace Game
                         else
                         {
                             Console.WriteLine("Please enter 1, 2, 5, or 6");
+                            goto case "3";
                         }
                         break;
                     //Cyan
@@ -131,7 +147,8 @@ namespace Game
                             "3\n" +
                             "4\n" +
                             "7\n" +
-                            "8");
+                            "8\n" +
+                        "Please type a number from the list above. Then, press enter to continue...");
                         int inputNum4 = Convert.ToInt32(Console.ReadLine());
                         if (inputNum4 == 3)
                         {
@@ -152,6 +169,7 @@ namespace Game
                         else
                         {
                             Console.WriteLine("Please enter 3, 4, 7, 8");
+                            goto case "4";
                         }
                         break;
                     case "5":
@@ -161,6 +179,7 @@ namespace Game
 
                     default:
                         Console.WriteLine("Please enter a valid number");
+                        Console.WriteLine("Press any key to continue...");
                         break;
                 }
                 Console.WriteLine("Please press any key to continue");
